@@ -5,11 +5,7 @@ class Unicorn {
   }
 
   isWhite() {
-    if (this.color !== 'white') {
-      return false;
-    } else {
-      return true;
-    }
+    return this.color === 'white';
   }
 
   says(text) {
