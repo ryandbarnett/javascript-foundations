@@ -19,10 +19,11 @@ describe('Hobbit', function() {
     assert.equal(bilbo.name, 'Bilbo');
   });
 
-  it.skip('should be able to have a different name', function() {
+  it('should be able to have a different name', function() {
     // create a variable hobbit whose value is an instance of the Hobbit class (pass in your name as an argument)
-
+    var frodo = new Hobbit('Frodo');
     // assert that hobbit.name is equal to your name
+    assert.equal(frodo.name, 'Frodo');
   });
 
   it.skip('should start out 0 years old', function() {
