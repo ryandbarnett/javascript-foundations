@@ -4,9 +4,7 @@ class Unicorn {
     this.color = color || 'white';
   }
 
-  isWhite() {
-    return this.color === 'white';
-  }
+  isWhite() { return this.color === 'white'; }
 
   says(text) {
     return `**;* ${text} *;**`;
