@@ -6,9 +6,7 @@ class Unicorn {
 
   isWhite() { return this.color === 'white'; }
 
-  says(text) {
-    return `**;* ${text} *;**`;
-  }
+  says(text) {return `**;* ${text} *;**`; }
 }
 
 module.exports = Unicorn;
