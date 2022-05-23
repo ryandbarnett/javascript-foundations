@@ -21,7 +21,7 @@ class Centaur {
   }
 
   sleep() {
-    return 'NO!';
+    return this.layingDown ? 'ZZZZ' : 'NO!';
   }
 
   layDown() {
