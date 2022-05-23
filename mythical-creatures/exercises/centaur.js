@@ -41,8 +41,16 @@ class Centaur {
   }
 
   drinkPotion() {
-    this.cranky = false;
-    this.actions = 0;
+    if (this.layingDown) {
+      return 'Not while I\'m laying down!';
+    } else {
+      if (this.cranky) {
+        this.cranky = false;
+        this.actions = 0;
+      } else {
+        this.cranky = true;
+      }
+    }
   }
 }
 

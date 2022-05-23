@@ -163,7 +163,7 @@ describe('Centaur', function() {
     assert.equal(centaur.cranky, false)
   });
 
-  it.skip('should only drink potion while standing', function() {
+  it('should only drink potion while standing', function() {
     var centaur = new Centaur({ name: 'Georgiana', type: 'Palomino' });
 
     centaur.layDown();
@@ -171,7 +171,7 @@ describe('Centaur', function() {
     assert.equal(centaur.drinkPotion(), 'Not while I\'m laying down!');
   });
 
-  it.skip('should be cranky if it drinks potion while rested', function() {
+  it('should be cranky if it drinks potion while rested', function() {
     var centaur = new Centaur({ name: 'Georgiana', type: 'Palomino' });
 
     centaur.drinkPotion();
