@@ -4,8 +4,12 @@ class Magician {
     this.topHat = data.topHat != false;
   }
 
-  incantation(spell) {
-    return spell.toUpperCase() + '!';
+  incantation(words) {
+    return words.toUpperCase() + '!';
+  }
+
+  cast() {
+    return 'PULL RABBIT FROM TOP HAT'
   }
 }
 
