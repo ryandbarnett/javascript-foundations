@@ -4,6 +4,7 @@ class Centaur {
     this.breed = data.type;
     this.cranky = false;
     this.standing = true;
+    this.layingDown = false;
     this.actions = 0;
   }
 
@@ -21,6 +22,16 @@ class Centaur {
 
   sleep() {
     return 'NO!';
+  }
+
+  layDown() {
+    this.standing = false;
+    this.layingDown = true;
+  }
+
+  standUp() {
+    this.standing = true;
+    this.layingDown = false;
   }
 }
 
