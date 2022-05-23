@@ -22,7 +22,7 @@ describe('Magician', function() {
     assert.equal(magician.topHat, true);
   });
 
-  it.skip('should not always have a hat', function() {
+  it('should not always have a hat', function() {
     var magician = new Magician({ name: 'Casey', topHat: false });
 
     assert.equal(magician.topHat, false)
