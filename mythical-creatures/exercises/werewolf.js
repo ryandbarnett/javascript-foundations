@@ -10,7 +10,7 @@ class Werewolf {
   transform() {
     this.human = !this.human;
     this.wolf = !this.wolf;
-    this.hungry = true;
+    this.hungry = !this.hungry;
   }
 
   eat(victim) {

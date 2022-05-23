@@ -88,8 +88,13 @@ describe('Werewolf', function() {
     assert.deepEqual(werewolf.victims, [victim]);
   });
 
-  it.skip('should not be hungry after changing back to human form', function() {
-    // your code here
+  it('should not be hungry after changing back to human form', function() {
+    var werewolf = new Werewolf('Casey');
+
+    werewolf.transform();
+    werewolf.transform();
+
+    assert.equal(werewolf.hungry, false);
   });
 
   it.skip('should transform back to human form after eating', function() {
