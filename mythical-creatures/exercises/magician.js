@@ -3,6 +3,7 @@ class Magician {
     this.name = data.name;
     this.topHat = data.topHat != false;
     this.confident = false;
+    this.spellsCast = 0;
   }
 
   incantation(words) {
@@ -10,6 +11,8 @@ class Magician {
   }
 
   cast() {
+    this.spellsCast++;
+    if (this.spellsCast >= 3) this.confident = true;
     return this.topHat ? 'PULL RABBIT FROM TOP HAT' : 'PULL DOVE FROM SLEEVE';
   }
 }
