@@ -10,13 +10,17 @@ class Centaur {
   shoot() {
     this.actions++;
     if (this.actions >= 3) this.cranky = true;
-    return 'Twang!!!';
+    return this.cranky ? 'NO!' : 'Twang!!!';
   }
 
   run() {
     this.actions++;
     if (this.actions >= 3) this.cranky = true;
-    return 'Clop clop clop clop!!!';
+    return this.cranky ? 'NO!' : 'Clop clop clop clop!!!';
+  }
+
+  sleep() {
+    return 'NO!';
   }
 }
 
