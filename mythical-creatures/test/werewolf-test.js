@@ -36,7 +36,7 @@ describe('Werewolf', function() {
     assert.equal(werewolf.human, false);
   });
 
-  it.skip('should show assert wolf form after transforming', function() {
+  it('should show assert wolf form after transforming', function() {
     var werewolf = new Werewolf('Lousia');
 
     assert.equal(werewolf.wolf, false);
