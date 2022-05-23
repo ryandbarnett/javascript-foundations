@@ -100,13 +100,13 @@ describe('Victim', function() {
     assert.isFunction(Victim);
   });
 
-  it.skip('should instantiate our good friend, Victim', function() {
+  it('should instantiate our good friend, Victim', function() {
     var victim = new Victim();
 
     assert.instanceOf(victim, Victim);
   });
 
-  it.skip('should have a name', function() {
+  it('should have a name', function() {
     var victim = new Victim('Leta');
 
     assert.equal(victim.name, 'Leta');
