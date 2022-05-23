@@ -14,8 +14,10 @@ class Werewolf {
   }
 
   eat(victim) {
-    this.victims.push(victim);
-    this.transform();
+    if (this.wolf) {
+      this.victims.push(victim);
+      this.transform();
+    }
   }
 }
 
