@@ -9,7 +9,7 @@ class Magician {
   }
 
   cast() {
-    return 'PULL RABBIT FROM TOP HAT'
+    return this.topHat ? 'PULL RABBIT FROM TOP HAT' : 'PULL DOVE FROM SLEEVE';
   }
 }
 
