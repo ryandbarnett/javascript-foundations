@@ -7,6 +7,10 @@ class Centaur {
   shoot() {
     return 'Twang!!!';
   }
+
+  run() {
+    
+  }
 }
 
 module.exports = Centaur;
