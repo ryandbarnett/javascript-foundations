@@ -15,6 +15,7 @@ class Werewolf {
 
   eat(victim) {
     this.victims.push(victim);
+    this.transform();
   }
 }
 
