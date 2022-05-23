@@ -21,7 +21,13 @@ class Centaur {
   }
 
   sleep() {
-    return this.layingDown ? 'ZZZZ' : 'NO!';
+    if (this.layingDown) {
+      this.actions = 0;
+      this.cranky = false;
+      return 'ZZZZ';
+    } else {
+      return 'NO!';
+    }
   }
 
   layDown() {
