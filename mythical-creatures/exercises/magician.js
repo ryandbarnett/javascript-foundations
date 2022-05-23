@@ -2,6 +2,7 @@ class Magician {
   constructor(data = {}) {
     this.name = data.name;
     this.topHat = data.topHat != false;
+    this.confident = false;
   }
 
   incantation(words) {
