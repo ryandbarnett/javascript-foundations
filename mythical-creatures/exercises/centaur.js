@@ -9,7 +9,7 @@ class Centaur {
   }
 
   run() {
-    
+    return 'Clop clop clop clop!!!';
   }
 }
 
