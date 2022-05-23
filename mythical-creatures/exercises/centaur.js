@@ -1,6 +1,7 @@
 class Centaur {
-  constructor(centaur) {
-    this.name = centaur.name;
+  constructor(data) {
+    this.name = data.name;
+    this.breed = data.type;
   }
 }
 
