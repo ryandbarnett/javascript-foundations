@@ -11,13 +11,13 @@ class Centaur {
   shoot() {
     this.actions++;
     if (this.actions >= 3) this.cranky = true;
-    return this.cranky ? 'NO!' : 'Twang!!!';
+    return this.cranky || this.layingDown ? 'NO!' : 'Twang!!!';
   }
 
   run() {
     this.actions++;
     if (this.actions >= 3) this.cranky = true;
-    return this.cranky ? 'NO!' : 'Clop clop clop clop!!!';
+    return this.cranky || this.layingDown ? 'NO!' : 'Clop clop clop clop!!!';
   }
 
   sleep() {
