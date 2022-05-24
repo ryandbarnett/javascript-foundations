@@ -5,6 +5,10 @@ class Ogre {
     this.swings = 0;
   }
 
+  apologize(human) {
+    human.knockedOut = false;
+  }
+
   encounter(human) {
     human.encounterCounter++;
     if (human.noticesOgre()) { this.swingAt(human) };
