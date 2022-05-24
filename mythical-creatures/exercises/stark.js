@@ -6,7 +6,7 @@ class Stark {
   }
 
   houseWords() {
-    return 'Winter is Coming';
+    return this.safe ? 'The North Remembers' : 'Winter is Coming';
   }
 }
 
