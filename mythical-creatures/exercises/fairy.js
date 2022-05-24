@@ -21,6 +21,10 @@ class Fairy {
   receiveBelief() {
     this.dust++;
   }
+
+  replaceInfant(infant) {
+    infant.disposition = 'Malicious';
+  }
 }
 
 module.exports = Fairy;
