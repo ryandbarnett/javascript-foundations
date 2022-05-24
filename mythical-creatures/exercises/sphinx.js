@@ -10,6 +10,12 @@ class Sphinx {
       this.riddles.shift();
     }
   }
+
+  attemptAnswer(answerAttempt) {
+    if (this.riddles[0].answer == answerAttempt) {
+      this.riddles.shift();
+    }
+  }
 }
 
 module.exports = Sphinx;
