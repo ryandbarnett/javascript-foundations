@@ -14,6 +14,12 @@ class Direwolf {
       this.huntsWhiteWalkers = false;
     }
   }
+
+  leave(stark) {
+    var index = this.starksToProtect.indexOf(stark);
+    this.starksToProtect.splice(index, 1);
+    stark.safe = false;
+  }
 }
 
 module.exports = Direwolf;
