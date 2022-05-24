@@ -6,10 +6,10 @@ describe('Sphinx', () => {
     assert.isFunction(Sphinx);
   });
 
-  it.skip('should have no name', () => {
+  it('should have no name', () => {
     const sphinx = new Sphinx();
-
-    assert.equal(sphinx.name, null);
+    console.log(sphinx.name)
+    assert.deepEqual(sphinx.name, null);
   });
 
   it.skip('should start with no riddles', () => {
