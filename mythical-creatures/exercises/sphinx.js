@@ -15,7 +15,10 @@ class Sphinx {
   attemptAnswer(answerAttempt) {
     for (let i = 0; i < this.riddles.length; i++) {
       if (this.riddles[i].answer == answerAttempt) {
-        this.riddles.splice(i, 1);
+        var answeredRiddle = this.riddles.splice(i, 1)[0];
+        if (this.riddles.length == 0) {
+          return `PSSSSSSS THIS HAS NEVER HAPPENED, HOW DID YOU KNOW THE ANSWER WAS \"${answeredRiddle.answer}\"???`
+        }
         return 'That wasn\'t that hard, I bet you don\'t get the next one';
       }
     }
