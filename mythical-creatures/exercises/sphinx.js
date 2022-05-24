@@ -12,8 +12,10 @@ class Sphinx {
   }
 
   attemptAnswer(answerAttempt) {
-    if (this.riddles[0].answer == answerAttempt) {
-      this.riddles.shift();
+    for (let i = 0; i < this.riddles.length; i++) {
+      if (this.riddles[i].answer == answerAttempt) {
+        this.riddles.splice(i, 1);
+      }
     }
   }
 }
