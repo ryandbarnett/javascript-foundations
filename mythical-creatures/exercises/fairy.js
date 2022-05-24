@@ -1,6 +1,7 @@
 class Fairy {
   constructor(name) {
     this.name = name;
+    this.disposition = 'Good natured';
     this.dust = 10;
     this.clothes = {dresses: ['Iris']};
   }
@@ -14,7 +15,7 @@ class Fairy {
   }
 
   makeDresses(dresses) {
-    this.clothes.dresses = this.clothes.dresses.concat(dresses)
+    this.clothes.dresses = this.clothes.dresses.concat(dresses);
   }
 }
 
