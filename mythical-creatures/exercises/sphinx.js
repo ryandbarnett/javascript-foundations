@@ -1,5 +1,6 @@
 class Sphinx {
   constructor() {
+    this.heroesEaten = 0;
     this.name = null;
     this.riddles = [];
   }
