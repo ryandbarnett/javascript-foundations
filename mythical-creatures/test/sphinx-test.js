@@ -8,11 +8,11 @@ describe('Sphinx', () => {
 
   it('should have no name', () => {
     const sphinx = new Sphinx();
-    console.log(sphinx.name)
+
     assert.deepEqual(sphinx.name, null);
   });
 
-  it.skip('should start with no riddles', () => {
+  it('should start with no riddles', () => {
     const sphinx = new Sphinx();
 
     assert.deepEqual(sphinx.riddles, []);
