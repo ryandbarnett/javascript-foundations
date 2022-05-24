@@ -105,7 +105,7 @@ describe('Fairy', () => {
     assert.deepEqual(firstInfant, newFirstInfant);
   });
 
-  it.skip('should raise stolen infants as its own', () => {
+  it('should raise stolen infants as its own', () => {
     const fairy = new Fairy('Winnie');
     const firstInfant = { name: 'Mary', eyes: 'Green', disposition: 'Calm' };
     const secondInfant = { name: 'Clarke', eyes: 'Brown', disposition: 'Gentle'};
@@ -113,7 +113,7 @@ describe('Fairy', () => {
     fairy.provoke();
     fairy.replaceInfant(firstInfant);
     fairy.replaceInfant(secondInfant);
-
+    
     assert.deepEqual(fairy.humanWards, [ firstInfant, secondInfant ]);
   });
 
