@@ -1,3 +1,3 @@
-var Unicorn = "";
+var Unicorn = ""
 
 module.exports = Unicorn;
