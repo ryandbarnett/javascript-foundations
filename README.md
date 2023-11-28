@@ -5,7 +5,7 @@ Each exercise emphasizes the fundamentals of object oriented programming in Java
 To begin, `cd` into each of the directories and follow the instructions in the README.
 
 1. Mythical Creatures
-2. Objects and Functions
+2. Objects alnd Functions
 3. Wizarding Objects
 4. Wizarding Arrays
 

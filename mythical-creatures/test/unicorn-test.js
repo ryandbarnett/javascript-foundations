@@ -7,32 +7,32 @@ describe('Unicorn', function() {
     assert.isFunction(Unicorn);
   });
 
-  it.skip('should instantiate our good friend, Unicorn', function() {
+  it('should instantiate our good friend, Unicorn', function() {
     var unicorn = new Unicorn();
 
     assert.instanceOf(unicorn, Unicorn);
   });
 
-  it.skip('should have a name', function() {
+  it('should have a name', function() {
     var unicorn = new Unicorn('Bree');
 
     assert.equal(unicorn.name, 'Bree');
   });
 
-  it.skip('should be able to have a different name', function() {
+  it('should be able to have a different name', function() {
     var unicorn = new Unicorn('Pam');
                 //constructor('Pam');
 
     assert.equal(unicorn.name, 'Pam');
   });
 
-  it.skip('should have a color', function() {
+  it('should have a color', function() {
     var unicorn = new Unicorn('TayTay', 'blue');
 
     assert.equal(unicorn.color, 'blue');
   });
 
-  it.skip('should be white as default', function() {
+  it('should be white as default', function() {
     var unicorn = new Unicorn('Louisa');
 
     assert.equal(unicorn.color, 'white');
